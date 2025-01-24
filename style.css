@@ -871,6 +871,7 @@ footer p {
   .graphic-img {
     grid-template-columns: repeat(2, 1fr); 
     gap: 10px; 
+    height: 20vh;
    
   }
  
