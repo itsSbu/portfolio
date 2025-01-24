@@ -745,8 +745,7 @@ footer p {
   }
   .details-container {
     padding: 1.5rem;
-    flex: 1;
-    background: #d9e3f0; 
+    flex: 1; 
     border-radius: 2rem;
     border: 0.3rem solid #1f3a57; 
     text-align: center;
