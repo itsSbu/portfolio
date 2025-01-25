@@ -304,6 +304,18 @@ section {
   text-align: center;
 }
 
+.text-container{
+  border: 0.1rem solid #0073e6; 
+  padding: 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.text-container p {
+  line-height: 1.8; 
+  margin-bottom: 15px; 
+  font-family: 'Arial', sans-serif;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
