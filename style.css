@@ -341,19 +341,27 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: 2.5rem; /* Keeps spacing between articles */
+  justify-content: flex-start; /* Aligns articles neatly */
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  align-items: center; /* Aligns image and text vertically */
+  width: 15rem; /* Adjust width as needed */
+  gap: 1rem; /* Adds spacing between the image and the text */
   flex: 1 1 200px;
   min-width: 200px;
   margin-bottom: 1rem;
 }
+
+.icon {
+  width: 40px; /* Adjust size of the icon */
+  height: fit-content; /* Maintain aspect ratio */
+  background-color: white;
+  border-radius: 50%;
+}
+
 
 /* PROJECTS SECTION */
 
