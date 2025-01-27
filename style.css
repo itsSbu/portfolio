@@ -205,12 +205,12 @@ section {
 
 /* ICONS */
 
-.icon {
+/* .icon {
   cursor: pointer;
   height: 2rem;
   background-color: #385bcf;
   border-radius: 50%;
-}
+} */
 
 /* BUTTONS */
 
@@ -263,6 +263,54 @@ section {
 }
 
 /* ABOUT SECTION */
+.experience-container h3 {
+  font-size: 1rem;
+  
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.experience-content p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.internships,
+.highlights {
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+ 
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #a09e9e;
+  
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+
+}
+
+ul li b {
+  color: #a09e9e;
+}
+
+ul li span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
 
 #about {
   position: relative;
@@ -303,7 +351,6 @@ section {
   border: 0.1rem solid #0073e6; /* Blue border */
   text-align: center;
 }
-
 .text-container{
   border: 0.1rem solid #0073e6; 
   padding: 30px; 
@@ -320,47 +367,82 @@ section {
 
 #experience {
   position: relative;
-  padding: 1rem;
+  padding: 2rem;
+  border: 0.1rem solid #0073e6; 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto;
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.experience-details-container h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
 }
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem; /* Keeps spacing between articles */
-  justify-content: flex-start; /* Aligns articles neatly */
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
 
 article {
   display: flex;
-  align-items: center; /* Aligns image and text vertically */
-  width: 15rem; /* Adjust width as needed */
-  gap: 1rem; /* Adds spacing between the image and the text */
-  flex: 1 1 200px;
-  min-width: 200px;
-  margin-bottom: 1rem;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(22% - 1rem); /* Three columns */
+  min-width: 220px;
 }
 
 .icon {
-  width: 40px; /* Adjust size of the icon */
-  height: fit-content; /* Maintain aspect ratio */
+  width: 40px;
+  height: 40px;
   background-color: white;
   border-radius: 50%;
 }
+
+article h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+article p {
+  font-size: 0.7rem;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  article {
+    width: calc(50% - 1rem); /* Two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  article {
+    width: 100%; /* Full width on mobile screens */
+  }
+}
+
 
 
 /* PROJECTS SECTION */
@@ -765,7 +847,8 @@ footer p {
   }
   .details-container {
     padding: 1.5rem;
-    flex: 1; 
+    flex: 1;
+    
     border-radius: 2rem;
     border: 0.3rem solid #1f3a57; 
     text-align: center;
@@ -890,7 +973,6 @@ footer p {
   .graphic-img {
     grid-template-columns: repeat(2, 1fr); 
     gap: 10px; 
-    height: 20vh;
    
   }
  
@@ -904,7 +986,8 @@ footer p {
   .graphic-img {
     border-radius: 0.5rem;
     width: 100%;
-  height: 20vh;
+    height: 20vh;
+
   }
   .tooltip {
     position: absolute;
@@ -919,6 +1002,7 @@ footer p {
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+
   .button {
     font-size: 1rem;
     padding: 10px 20px;
@@ -1009,7 +1093,13 @@ footer p {
   }
 
   .email-icon {
-    height: 2rem; 
+    height: 1rem; 
+    
+  }
+  .icon {
+    cursor: pointer;
+    background-color: #385bcf;
+    border-radius: 50%;
   }
 }
 
